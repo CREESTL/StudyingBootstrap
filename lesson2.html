@@ -1,0 +1,41 @@
+<!--
+
+ В ЭТОМ УРОКЕ РАCМАТРИВАЕМ СИСТЕМУ СЕТОК
+ в ней максимум 12 столбцов 
+ строк сколько угодно 
+ xs - для смартфонов -очень маленький блок 
+ md - средний блок под ноуты 
+ lg - большой блок под компы 
+ Но мы делаем адаптивный сайт - поэтому без них
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap уроки</title>
+	<!--Нужно, чтобы на мобилах отрывалось с масштабированием -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Именно это подключает Bootstrap CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<!-- Container означает, что блок div имеет ширину-->
+	<!-- fluid - блок растягивается на всю ширину экрана  -->
+  <div class="container-fluid" >
+    <h1>3 различных блока</h1>
+    <!-- row-элементы расположены в ряд-->
+   	<div class="row">
+   		<!-- Я хочу, чтобы было 3 элемента в строку на странице
+   			col - столбец, md - средний размер, 4 = 12/3-->
+   		<div class="col-md-4" style="background-color: #00FFFF">Left</div>
+   		<div class="col-md-4" style="background-color: #DC143C">Middle</div>
+   		<div class="col-md-4" style="background-color: #FF1493">Right</div>
+   	</div>
+  </div>
+</body>
+</html>

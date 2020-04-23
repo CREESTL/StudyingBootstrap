@@ -1,0 +1,44 @@
+<!--
+
+ПРОДОЛЖАЕМ СИСТЕМУ СЕТОК
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap уроки</title>
+	<!--Нужно, чтобы на мобилах отрывалось с масштабированием -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Именно это подключает Bootstrap CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<!-- Container означает, что блок div имеет ширину-->
+	<!-- fluid - блок растягивается на всю ширину экрана  -->
+  <div class="container-fluid" >
+    <h1>3 различных блока</h1>
+    <!-- row-элементы расположены в ряд-->
+   	<div class="row">
+   		<!-- Если прописать все 4 класса размеров, то БУДЕТ ИСПОЛЬЗОВАТЬСЯ ТОТ,
+        КОТОРЫЙ СООТВЕТСТВУЕТ РАЗМЕРУ ЭКРАНА ДЕВАЙСЯ
+        Например, если будем смотреть с планшета (sm), то первая полоска будет занимать 9 слобцов, а вторая - 3 столбца
+        Можyо просто мышкой изменять размер окна в браузере и увидеть результат
+        Также внутрь каждой полоски можно встроить другую полоску-->
+   		<div class="col-xs-12 col-sm-9 col-md-4 col-lg-6" style="background-color: #00FFFF">
+        <!--Вот так сделали класс внутри класса -->
+        <div class="row">
+          <!-- Левую полоску делим на 3 и 9 частей -->
+          <div class="col-lg-3" style="background-color: #1E90FF">Лево</div>
+          <div class="col-lg-9" style="background-color: #F0E68C">Право</div>
+        </div>
+      </div>  
+   	  <div class="col-xs-12 col-sm-3 col-md-8 col-lg-6" style="background-color: #EE82EE">Вторая</div>
+   	</div>
+  </div>
+</body>
+</html>
