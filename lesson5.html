@@ -1,0 +1,76 @@
+<!--
+
+РАБОТА С ТАБЛИЦАМИ
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap уроки</title>
+  <!--Нужно, чтобы на мобилах отрывалось с масштабированием -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Подлючаем Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!-- Подключаем Bootstrap JQuery-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- Подключаем Bootstrap Popper-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Подключаем Bootstrap JS-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+	<!-- table-responsive - таблица подстраивается под размер экрана, появляются ползунки-->
+	<div class="table-responsive">
+		<!-- table - класс таблиц, 
+			table-striped - чередование цетов строк
+			table-hover - ячейка подсвечивается при наведении на неё мышки
+			table-bordered - разделяющие полоски появляются
+			table-condensed - более компактный вид
+			table-dark - темная тема -->
+		<table class="table table-hover table-bordered ">
+			<!-- Заголоки столбцов -->
+			<thead>
+				<!-- tr = table row - ряд
+				table-active - подсвечивает весь ряд серым -->
+				<tr class="table-active">
+				 	<th>Имя</th>
+					<th>Номер телефона</th>
+					<th>Почта</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Строка таблицы-->
+				<tr>
+					<!-- Ячейка в строке таблицы 
+						table-success - подсвечивает ячейку зеленым цветом, есть и другие цвета (см.урок 4)-->
+					<td class="table-success">Василий</td>
+					<td>89190181875</td>
+					<td>vasya@yandex.ru</td>
+				</tr>
+				<tr>
+					<td>Алсу</td>
+					<td>89194861875</td>
+					<td class="table-info">zhopa@yandex.ru</td>
+				</tr>
+				<tr>
+					<td>Григорий</td>
+					<td class="table-warning">89607249275</td>
+					<td>maksimowgrischa33@yandex.ru</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

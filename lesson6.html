@@ -1,0 +1,142 @@
+<!--
+
+РАБОТА С КНОПКАМИ
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap уроки</title>
+  <!--Нужно, чтобы на мобилах отрывалось с масштабированием -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Подлючаем Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!-- Подключаем Bootstrap JQuery-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- Подключаем Bootstrap Popper-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Подключаем Bootstrap JS-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  <!-- Это стиль CSS - отступ с левого края 30 пикселей, чтобы кнопки не прилипали к краю-->
+  <style>
+  	body{
+  		padding: 30px;
+  	}
+  </style>
+</head>
+<body>
+	<!-- 
+	btn-primary - синяя кнопка
+	btn-secondary -серая кнопка
+	btn-sucess - зеленая кнопка
+	btn-danger - красная кнопка
+	btn-warning - желтая кнопка
+	btn-info - голубая кнопка
+	btn-light - почти прозрачная кнопка
+	btn-dark - черная кнопка
+	btn-link - кнопка-ссылка
+	-->
+	<button class="btn btn-primary">Обычная кнопка</button>
+	<button class="btn btn-danger">SOS</button>
+	<button class="btn btn-link">Домашняя страница</button>
+	<hr>
+
+	<!-- Подтверждение ввода --> 
+	<input type="submit" class="btn btn-primary" value="Основная">
+
+	<!-- Кнопка-ссылка --> 
+	<hr>
+	<a href="#" class="btn btn-info">Уведомление</a>
+
+	<!-- Разные размеры кнопок --> 
+	<hr>
+	<button class="btn btn-primary btn-lg">Кнопка</button>
+	<button class="btn btn-primary btn-md">Кнопка</button>
+	<button class="btn btn-primary btn-sm">Кнопка</button>
+
+	<!-- Блочные кнопки  --> 
+	<hr>
+	<!-- btn-block - кнопка на весь экран в длину  --> 
+	<button class="btn btn-warning btn-md btn-block">Я БОЛЬШАЯ</button>	
+
+	<!-- Активные кнопки  --> 
+	<hr>
+	<!-- active делает кнопку "нажатой" 
+		disabled - нельзя нажать--> 
+ 	<button class="btn btn-info btn-lg active">Нажата</button>
+	<button class="btn btn-info btn-lg disabled">Нельзя нажать</button>
+
+	<hr>
+
+	<!-- Группы кнопок  --> 
+	<!-- Вверху страницы кнопки находятся хоть и рядом, но между ними есть расстояние
+	А теперь из-за btn-group они вплотную друг к другу стоят  --> 
+	<div class="btn-group btn-group-lg">
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 1
+		</label>
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 2
+		</label>
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 3
+		</label>
+	</div>
+	
+	<!-- Вертикальные кнопки  --> 
+	<div class="btn-group-vertical btn-group-xs">
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 4
+		</label>
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 5
+		</label>
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 6
+		</label>
+	</div>
+
+	<!-- Группы групп кнопок  -->
+	<hr>
+	<div class="btn-toolbar">
+		<div class="btn-group btn-group-lg">
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 1
+		</label>
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 2
+		</label>
+		<label class="btn btn-primary">
+			<input type="checkbox"> Параметр 3
+		</label>
+	</div>
+	<div class="btn-group btn-group-lg">
+		<label class="btn btn-primary">
+			<input type="radio"> Параметр 1
+		</label>
+		<label class="btn btn-primary">
+			<input type="radio"> Параметр 2
+		</label>
+		<label class="btn btn-primary">
+			<input type="radio"> Параметр 3
+		</label>
+	</div>
+
+
+	</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
